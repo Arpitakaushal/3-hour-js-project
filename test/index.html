@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="margin: 0">
+    <form onsubmit="handleFormSubmit(event)">
+      <label for="username">Choose expense amount:</label>
+      <input class = 'aaru' type="number"  name="username" id="username" />
+      <label for="email">Choose Description:</label>
+      <input class = 'aaru' type="text" name="email" id="email" />
+      <label for="select-category">Choose category</label>
+     <!-- <input class = 'aaru' type="" name="phone" id="select-category" /> -->
+      <select class="aaru" name="phone" id="select-category">
+         <option value="car">Car</option>
+         <option value="petrol">petrol</option>
+         <option value="education">education</option>
+         <option value="electricity-bill">electricity-bill</option>
+      </select>
+      <button type="submit">Add expense</button>
+    </form>
+    <h2>User expense</h2>
+    <ul id="userList"></ul>
+  </body>
+  <script src="index.js"></script>
+</html>
